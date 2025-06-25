@@ -3,4 +3,4 @@
 ## How to set up
 * Manually
     * Copy the items into the `~/.config` directory
-* Run the `script copy-to-config.sh`
+* Run the script `copy-to-config.sh`
