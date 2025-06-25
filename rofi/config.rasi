@@ -1,0 +1,11 @@
+
+@theme "/usr/share/rofi/themes/arthur.rasi"
+
+configuration {
+	display-drun: "Applications:";
+	display-window: "Window:";
+	drun-display-format: "{icon} {name}";
+	font: "JetBrainsMono Nerd Font 20";
+	show-icons: true;
+	modi: "window,run,drun";
+}
