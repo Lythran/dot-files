@@ -2,5 +2,5 @@
 
 ## How to set up
 * Manually
-    * Copy the items into the `~/.config` directory
+    * Copy the folders into the `~/.config` directory
 * Run the script `copy-to-config.sh`
