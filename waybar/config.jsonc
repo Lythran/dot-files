@@ -34,22 +34,23 @@
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+     "hyprland/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{icon}",
+	 "persistent-workspaces": {
+		 "*": [1,2,3,4,5]
+	 },
+	 // use logos from nerd fonts, so be sure to isntall a nerd font
+	 "format-icons": {
+		 "1": "󰣇", // arch logo default
+		 "2": "", // terminmal startup
+		 "3": "", // folder startup
+		 "4": "󰈹", // browser startup
+		 "5": "" // steam startup
+	 }
+     },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
