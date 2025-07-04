@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    // "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -40,7 +40,7 @@
          "warp-on-scroll": false,
          "format": "{icon}",
 	 "persistent-workspaces": {
-		 "*": [1,2,3,4,5]
+		 "*": [1,2,3,4,5, 6, 7, 8, 9]
 	 },
 	 // use logos from nerd fonts, so be sure to isntall a nerd font
 	 "format-icons": {
@@ -207,7 +207,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol-qt"
     },
     "custom/media": {
         "format": "{icon} {text}",
@@ -227,8 +227,8 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
+			"shutdown": "systemctl shutdown",
+			"reboot": "systemctl reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
