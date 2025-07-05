@@ -7,15 +7,15 @@
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        // "hyprland/workspaces",
+        "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        // "hyprland/window",
+        "hyprland/window"
 	// "clock"
-	"hyprland/workspaces"
+	// "hyprland/workspaces"
     ],
     "modules-right": [
         "mpd",
@@ -41,7 +41,7 @@
          "warp-on-scroll": false,
          "format": "{icon}",
 	 "persistent-workspaces": {
-		 "*": [1,2,3,4,5, 6, 7, 8, 9]
+		 "*": [1,2,3,4,5, 6, 7, 8, 9, 10]
 	 }//,
 	 //// use logos from nerd fonts, so be sure to isntall a nerd font
 	 //"format-icons": {
@@ -186,8 +186,8 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-ethernet": "",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
