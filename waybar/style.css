@@ -1,0 +1,76 @@
+/*
+ * og from https://github.com/mubin6th/MinimalSway/tree/master
+ * modified to be more nord
+*/
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+}
+
+window#waybar {
+    background: #2e3440;
+    border-bottom: 2px solid #4c566a;
+}
+
+tooltip {
+    background-color: #2e3440;
+    border: 2px solid #4c566a;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+}
+
+#workspaces {
+    background-color: #3b4252;
+    margin: 6px 0px 6px 6px;
+    border: 2px solid #434c5e;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 2px 4px;
+    color: #d8dee9;
+}
+
+#workspaces button.focused {
+    color: #ddc7a1;
+}
+
+#workspaces button.urgent {
+    background-color: #bf616a;
+    color: #d8dee9;
+}
+
+#tray,
+#cpu,
+#memory,
+#network,
+#clock,
+#pulseaudio {
+    background-color: #3b4252;
+    border: 2px solid #434c5e;
+    color: #d8dee9;
+}
+
+#cpu.critical,
+#memory.critical {
+    background-color: #bf616a;
+    border: 2px solid red;
+    color: #2e3440;
+}
