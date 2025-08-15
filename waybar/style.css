@@ -57,6 +57,11 @@ tooltip {
     color: #d8dee9;
 }
 
+#workspaces button.active {
+  background-color: #d8dee9;
+  color: #3b4252;
+}
+
 #tray,
 #cpu,
 #memory,

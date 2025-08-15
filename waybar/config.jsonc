@@ -65,8 +65,8 @@
 
     "network": {
         "format-wifi" : "wifi up",
-        "format-ethernet": "󰈁",
-        "format-disconnected" : "󰈂",
+        "format-ethernet": "enth up",
+        "format-disconnected" : "no network",
         "tooltip": false
     },
 
