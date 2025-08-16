@@ -26,7 +26,8 @@
 	"pulseaudio",
 	"network",
         "cpu",
-        "memory"
+        "memory",
+	"custom/power"
     ],
 
     "hyprland/workspaces": {
@@ -78,5 +79,10 @@
         "nospacing": 1,
         "on-click": "pavucontrol",
         "tooltip": false
+    },
+    
+    "custom/power": {
+	"format" : "⏻ ",
+	"on-click": "$HOME/.config/waybar/rofi-power-menu.sh"
     }
 }
