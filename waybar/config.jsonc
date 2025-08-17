@@ -73,9 +73,12 @@
 
     "pulseaudio": {
         "scroll-step": 5,
-        "max-volume": 150,
-        "format": "vol {volume}%",
-        "format-bluetooth": "vol {volume}%",
+        "max-volume": 100,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+	"format-icons": {
+            "default": ["", "", ""]
+        },
         "nospacing": 1,
         "on-click": "pavucontrol",
         "tooltip": false
@@ -83,6 +86,7 @@
     
     "custom/power": {
 	"format" : "⏻ ",
-	"on-click": "$HOME/.config/waybar/rofi-power-menu.sh"
+	"on-click": "$HOME/.config/waybar/rofi-power-menu.sh",
+	"tooltip": false
     }
 }
