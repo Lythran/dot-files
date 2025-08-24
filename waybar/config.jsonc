@@ -1,6 +1,7 @@
 /* 
  * og from https://github.com/mubin6th/MinimalSway/tree/master
  * modified to be more nord
+ * taken new inspiration from: https://github.com/MrE8065/MyDotfiles/blob/main/.config/waybar/config
 */
 
 {
@@ -14,7 +15,9 @@
     "margin-left": 0,
 
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+	"custom/separator",
+	"mpris"
     ],
 
     "modules-center": [
@@ -48,7 +51,7 @@
 
     "cpu": {
         "format": " {usage}%",
-        "interval": 1,
+        "interval": 2,
 
         "states": {
             "critical": 90
@@ -57,7 +60,7 @@
 
     "memory": {
         "format": " {percentage}%",
-        "interval": 1,
+        "interval": 2,
 
         "states": {
             "critical": 80
@@ -88,5 +91,25 @@
 	"format" : "⏻ ",
 	"on-click": "$HOME/.config/waybar/rofi-power-menu.sh",
 	"tooltip": false
+    },
+
+    "mpris": {
+            "format": " {title} - {artist}",
+            "dynamic-len": 20,
+            "format-paused": " {title} - {artist}",
+            "title-len": 20,
+            "artist-len": 20,
+	    "tooltip": false,
+            "ignored-players": ["firefox"],
+            "on-click": "playerctl previous track",
+            "on-click-middle": "playerctl play-pause",
+            "on-click-right": "playerctl next track"
+    },
+
+    /* icons and other neat stuff */
+
+    "custom/separator": {
+            "format": " | ",
+            "tooltip": false
     }
 }
