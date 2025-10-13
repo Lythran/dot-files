@@ -1,3 +1,3 @@
-(/images/hyprnord.png)
-(/images/swaync-nordic.png)
-(/images/waybar-nordic.png)
+(./images/hyprnord.png)
+(./images/swaync-nordic.png)
+(./images/waybar-nordic.png)
