@@ -15,9 +15,7 @@
     "margin-left": 0,
 
     "modules-left": [
-        "hyprland/workspaces",
-	"custom/separator",
-	"mpris"
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -25,12 +23,12 @@
     ],
 
     "modules-right": [
-        "tray",
-	"pulseaudio",
+	"tray",
 	"network",
+	"pulseaudio",
         "cpu",
         "memory",
-	"custom/power"
+	"custom/notification"
     ],
 
     "hyprland/workspaces": {
@@ -50,8 +48,8 @@
     },
 
     "cpu": {
-        "format": " {usage}%",
-        "interval": 2,
+        "format": "",
+        "interval": 5,
 
         "states": {
             "critical": 90
@@ -59,57 +57,61 @@
     },
 
     "memory": {
-        "format": " {percentage}%",
-        "interval": 2,
+        "format": "",
+        "interval": 5,
 
         "states": {
             "critical": 80
         }
     },
 
+    /* some network stolen from omarchy: https://github.com/basecamp/omarchy/blob/master/config/waybar/config.jsonc */
+
     "network": {
-        "format-wifi" : "wifi up",
-        "format-ethernet": "enth up",
-        "format-disconnected" : "no network",
-        "tooltip": false
+	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format": "{icon}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰀂",
+        "format-disconnected": "󰤮",
+        "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 3
     },
 
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 100,
+	"format-muted": " ",
         "format": "{icon} {volume}%",
         "format-bluetooth": "{icon} {volume}%",
 	"format-icons": {
-            "default": ["", "", ""]
+	    "default": ["", "", ""]
         },
         "nospacing": 1,
         "on-click": "pavucontrol",
         "tooltip": false
     },
-    
-    "custom/power": {
-	"format" : "⏻ ",
-	"on-click": "$HOME/.config/waybar/rofi-power-menu.sh",
-	"tooltip": false
-    },
 
-    "mpris": {
-            "format": " {title} - {artist}",
-            "dynamic-len": 20,
-            "format-paused": " {title} - {artist}",
-            "title-len": 20,
-            "artist-len": 20,
-	    "tooltip": false,
-            "ignored-players": ["firefox"],
-            "on-click": "playerctl previous track",
-            "on-click-middle": "playerctl play-pause",
-            "on-click-right": "playerctl next track"
-    },
-
-    /* icons and other neat stuff */
-
-    "custom/separator": {
-            "format": " | ",
-            "tooltip": false
-    }
+    "custom/notification": {
+        "tooltip": false,
+	"format": "{icon}",
+	"format-icons": {
+	    "notification": "<span foreground='red'><sup></sup></span>",
+	    "none": "",
+	    "dnd-notification": "<span foreground='red'><sup></sup></span>",
+	    "dnd-none": "",
+	    "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+	    "inhibited-none": "",
+	    "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+	    "dnd-inhibited-none": ""
+	},
+	"return-type": "json",
+	"exec-if": "which swaync-client",
+	"exec": "swaync-client -swb",
+	"on-click": "swaync-client -t -sw",
+	"on-click-right": "swaync-client -d -sw",
+	"escape": true
+  }
+  
 }
