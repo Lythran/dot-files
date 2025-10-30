@@ -1,3 +1,6 @@
 ![](/images/hyprnord.png)
 ![](/images/swaync-nordic.png)
 ![](/images/waybar-nordic.png)
+![](images/matugen-desktop.png)
+![](/images/matugen-rice.png)
+![](/images/matugen-swaync.png)
