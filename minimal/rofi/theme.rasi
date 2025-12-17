@@ -1,0 +1,14 @@
+* {
+    background-color: black;
+    text-color: white;
+}
+
+element selected {
+    background-color: white;
+    text-color: black;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}   

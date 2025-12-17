@@ -1,13 +1,6 @@
-* {
-    background: black;
-    foreground: white;
-}
+@theme "theme"
 
-window {
-    background: #000000;
-}
-
-listview {
-    selected-normal-bg: #FFFFFF;
-    selected-normal-fg: red;
-}
+configuration {
+    display-drun: "Applications";
+    disable-history: true;
+}   
