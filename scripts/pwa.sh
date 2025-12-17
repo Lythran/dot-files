@@ -30,7 +30,7 @@ EOF
 }
 
 remove() {
-	choices=$(grep -l "/usr/bin/brave" "$HOME/.local/share/applications/"*.desktop | xargs -I {} basename -s .desktop {} "Back")
+	choices=$(grep -l "/usr/bin/brave" "$HOME/.local/share/applications/"*.desktop | xargs -I {} basename -s .desktop {} ; echo "Back")
 
 	if [ -z "$(grep -l /usr/bin/brave $HOME/.local/share/applications/*.desktop)" ]; then
 		inst_choice=$(gum choose --header="No PWA desktop entry found. Would you like to install one?" "Yes" "No")
