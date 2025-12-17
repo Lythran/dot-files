@@ -1,0 +1,31 @@
+* {
+    font-family: JetBrainsMonoNerdFontPropo;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#waybar {
+    background-color: black;
+    color: white;
+}
+
+#workspaces button.active {
+    color: black;
+    background: white;
+}   
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 5px;
+}
+
