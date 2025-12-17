@@ -1,0 +1,13 @@
+* {
+    background: black;
+    foreground: white;
+}
+
+window {
+    background: #000000;
+}
+
+listview {
+    selected-normal-bg: #FFFFFF;
+    selected-normal-fg: red;
+}
