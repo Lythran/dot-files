@@ -11,4 +11,9 @@ element selected {
 element-text {
     background-color: inherit;
     text-color: inherit;
+}
+
+window {
+    border: 5px;
+    border-color: black;
 }   

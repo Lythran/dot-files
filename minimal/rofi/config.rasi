@@ -1,6 +1,6 @@
 @theme "theme"
 
 configuration {
-    display-drun: "Applications";
+    display-drun: "Applications: ";
     disable-history: true;
 }   
