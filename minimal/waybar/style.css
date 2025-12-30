@@ -15,7 +15,6 @@
 }   
 
 #clock,
-#battery,
 #cpu,
 #memory,
 #network,
@@ -25,7 +24,8 @@
 #mode,
 #idle_inhibitor,
 #scratchpad,
+#keyboard-state label.capslock,
+#keyboard-state label.numlock,
 #mpd {
     padding: 5px;
 }
-
