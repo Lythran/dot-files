@@ -1,7 +1,6 @@
-![](/images/minimal%20desktop.png)
-![](/images/minimal%20fastfetch.png)
-![](/images/minimal%20rice.png)
-
+![](/images/minimal-desktop.png)
+![](/images/minimal-fastfetch.png)
+![](/images/matugen-rice.png)
 ![](/images/hyprnord.png)
 ![](/images/swaync-nordic.png)
 ![](/images/waybar-nordic.png)
