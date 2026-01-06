@@ -1,6 +1,6 @@
-![](/images/minimal desktop.png)
-![](/images/minimal fastfetch.png)
-![](/images/minimal rice.png)
+![](/images/minimal%20desktop.png)
+![](/images/minimal%20fastfetch.png)
+![](/images/minimal%20rice.png)
 
 ![](/images/hyprnord.png)
 ![](/images/swaync-nordic.png)
